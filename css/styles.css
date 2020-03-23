@@ -105,6 +105,14 @@ img {
   transition: top 1s ease-in-out;
 }
 
+.qrCode {
+  width: 120px;
+  height: 120px;
+  background: url(../img/qr_code.png) no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+}
+
 #loader {
   top: 0;
   background-color: #2b2b2b;
