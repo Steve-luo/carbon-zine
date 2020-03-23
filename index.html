@@ -6,11 +6,49 @@
   <meta charset="utf-8"/>
   <meta name="author" content="Jason Luo">
   <meta name="description" content="An online interactive carbon zine. ">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/viewer.min.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/idx7mmu.css">
+
+  <script type="text/javascript" src="js/viewer.min.js"></script>
+  <script type="text/javascript" src="js/pageHeight.js"></script>
 </head>
 <body>
-
+  <div class="pageContainer">
+    <div class="zinePage" id="page1">
+      <div class="content">
+        <h1 class="textCenter">The Carbon Cycle</h1>
+        <h4 class="textCenter">Created by Jason Luo</h4>
+      </div>
+    </div>
+    <div class="zinePage" id="page2">
+      <div class="content">
+        <h2 class="textCenter">What is the carbon cycle?</h1>
+        <p>The carbon cycle is the biogeochemical cycle by which carbon is exchanged among the biosphere, pedosphere, geosphere, hydrosphere, and atmosphere of the Earth. </p>
+        <img src="img/carbon_cycle.jpg" id="img1">
+        <h6 class="textCenter">Tap the image to zoom in</h6>
+      </div>
+    </div>
+    <div class="zinePage" id="page3">
+      <div class="content">
+        <h2 class="textCenter">Greenhouse Effect</h1>
+        <p>The greenhouse effect is the process by which radiation from a planet's atmosphere warms the planet's surface to a temperature above what it would be without this atmosphere. <sup>[1]</sup></p>
+        <img src="img/greenhouse_effect.png" id="img2">
+        <h6 class="textCenter">Tap the image to zoom in</h6>
+      </div>
+    </div>
+    <div class="zinePage" id="page4">
+      <div class="content">
+        <h2 class="textCenter">Greenhouse Effect</h1>
+        <p>The greenhouse effect is the process by which radiation from a planet's atmosphere warms the planet's surface to a temperature above what it would be without this atmosphere. <sup>[1]</sup></p>
+        <img src="img/greenhouse_effect.png" id="img3">
+        <h6 class="textCenter">Tap the image to zoom in</h6>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/scrollColor.js"></script>
+  <script type="text/javascript" src="js/callViewer.js"></script>
 </body>
 </html>

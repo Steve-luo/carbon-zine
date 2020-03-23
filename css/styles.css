@@ -1,0 +1,91 @@
+body {
+  font-family: dinosaur, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  overflow-y: hidden;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+h1 {
+  font-family: interstate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24pt;
+}
+
+h2 {
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18pt;
+  margin: 1em 0;
+}
+
+h4 {
+  font-family: axia, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12pt;
+}
+
+h6 {
+  font-family: axia, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 8pt;
+  margin: 0 0 1em 0;
+}
+
+p {
+  font-size: 12pt;
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 12pt 0 0 0;
+}
+
+.pageContainer {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.zinePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  scroll-snap-align: start;
+}
+
+.content {
+  position: absolute;
+  padding: 45px 25px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+#page1 {
+  /*background-color: #20BF55;*/
+}
+
+#page2 {
+  /*background-color: #0B4F6C;*/
+}
+
+#page3 {
+  /*background-color: #01BAEF;*/
+}
