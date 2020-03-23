@@ -2,11 +2,12 @@ body {
   font-family: dinosaur, sans-serif;
   font-weight: 400;
   font-style: normal;
+  word-wrap: break-word;
   margin: 0;
   overflow-y: hidden;
   background-color: var(--bg-color);
   color: var(--accent-color);
-  transition: background-color 0.5s linear, color 0.5s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 h1 {
@@ -24,11 +25,26 @@ h2 {
   margin: 1em 0;
 }
 
+h2 {
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14pt;
+  margin: 1em 0;
+}
+
 h4 {
   font-family: axia, monospace;
   font-weight: 300;
   font-style: normal;
   font-size: 12pt;
+}
+
+h5 {
+  font-family: axia, monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10pt;
 }
 
 h6 {
@@ -44,9 +60,48 @@ p {
   margin: 1em 0;
 }
 
+a {
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #041d28;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+a:active {
+  color: inherit;
+}
+
 img {
   max-width: 100%;
   margin: 12pt 0 0 0;
+}
+
+.overlay {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  min-width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  color: #fbfbff;
+  background-color: #000;
+  z-index: 2020;
 }
 
 .pageContainer {
@@ -61,6 +116,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
   min-width: 100vw;
   height: 100vh;
@@ -70,22 +126,22 @@ img {
 }
 
 .content {
+  width: 90%;
   position: absolute;
-  padding: 45px 25px;
 }
 
 .textCenter {
   text-align: center;
 }
 
-#page1 {
-  /*background-color: #20BF55;*/
+@media (min-width: 768px) {
+  #desktop {
+    display: flex;
+  }
 }
 
-#page2 {
-  /*background-color: #0B4F6C;*/
-}
-
-#page3 {
-  /*background-color: #01BAEF;*/
+@media (max-height: 540px) {
+  #landscape {
+    display: flex;
+  }
 }

@@ -19,8 +19,8 @@ Viewer.setDefaults({
   zoomOnTouch: true,
   zoomOnWheel: true,
   viewed() {
-    viewerNames[0].zoomTo(0.3);
-    viewerNames[1].zoomTo(0.6);
+    viewerNames[0].zoomTo(0.4);
+    viewerNames[1].zoomTo(1);
   },
 })
 

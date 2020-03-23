@@ -1,5 +1,5 @@
-const pageColor = ["#20BF55", "#20BF55", "#0B4F6C", "#01BAEF"]
-const accentColor = ["#041d28", "#041d28", "#fbfbff", "#2b2b2b"]
+const pageColor = ["#20BF55", "#20BF55", "#0B4F6C", "#01BAEF", "#01BAEF", "#01BAEF", "#2b2b2b", "#2b2b2b", "#fbfbff", "#fbfbff"]
+const accentColor = ["#041d28", "#041d28", "#fbfbff", "#041d28", "#041d28", "#041d28", "#fbfbff", "#fbfbff", "#2b2b2b", "#2b2b2b"]
 
 const root = document.documentElement;
 const container = document.querySelector(".pageContainer")

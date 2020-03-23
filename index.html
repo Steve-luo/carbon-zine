@@ -12,18 +12,37 @@
   <link rel="stylesheet" type="text/css" href="css/viewer.min.css">
   <link rel="stylesheet" type="text/css" href="https://use.typekit.net/idx7mmu.css">
 
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/viewer.min.js"></script>
   <script type="text/javascript" src="js/pageHeight.js"></script>
 </head>
 <body>
+  <div class="overlay" id="desktop">
+    <div class="content textCenter">
+      <h1>This zine is designed to be viewed on smaller screen.</h1>
+      <img src="img/qr_code.png" style="width: 120px">
+      <h2>Please scan the QR code</h2>
+      <h2>or visit <u>carbonzine.jasonluo.me</u> directly on a mobile device. </h2>
+    </div>
+  </div>
+
+  <div class="overlay" id="landscape">
+    <div class="content textCenter">
+      <h1>Your screen is too short to fit the content. </h1>
+      <h2>If you're viewing this zine in landscape mode, <br/>please rotate your device to its vertical position. </h2>
+    </div>
+  </div>
+
   <div class="pageContainer">
-    <div class="zinePage" id="page1">
+    <div class="zinePage">
       <div class="content">
         <h1 class="textCenter">The Carbon Cycle</h1>
-        <h4 class="textCenter">Created by Jason Luo</h4>
+        <h4 class="textCenter">An online zine created by Jason Luo</h4>
+        <h5 class="textCenter" style="margin: 150px 0 0 0"><<< Swipe left for the next page <<<</h5>
       </div>
     </div>
-    <div class="zinePage" id="page2">
+
+    <div class="zinePage">
       <div class="content">
         <h2 class="textCenter">What is the carbon cycle?</h1>
         <p>The carbon cycle is the biogeochemical cycle by which carbon is exchanged among the biosphere, pedosphere, geosphere, hydrosphere, and atmosphere of the Earth. </p>
@@ -31,7 +50,8 @@
         <h6 class="textCenter">Tap the image to zoom in</h6>
       </div>
     </div>
-    <div class="zinePage" id="page3">
+
+    <div class="zinePage" >
       <div class="content">
         <h2 class="textCenter">Greenhouse Effect</h1>
         <p>The greenhouse effect is the process by which radiation from a planet's atmosphere warms the planet's surface to a temperature above what it would be without this atmosphere. <sup>[1]</sup></p>
@@ -39,12 +59,50 @@
         <h6 class="textCenter">Tap the image to zoom in</h6>
       </div>
     </div>
-    <div class="zinePage" id="page4">
+
+    <div class="zinePage">
       <div class="content">
-        <h2 class="textCenter">Greenhouse Effect</h1>
-        <p>The greenhouse effect is the process by which radiation from a planet's atmosphere warms the planet's surface to a temperature above what it would be without this atmosphere. <sup>[1]</sup></p>
-        <img src="img/greenhouse_effect.png" id="img3">
-        <h6 class="textCenter">Tap the image to zoom in</h6>
+        <h2 class="textCenter">Impact on Climate Change</h1>
+        <p>According to the 2014 Assessment Report from the Intergovernmental Panel on Climate Change, "atmospheric concentrations of carbon dioxide, methane and nitrous oxide are unprecedented in at least the last 800,000 years. Their effects, together with those of other anthropogenic drivers, have been detected throughout the climate system and are extremely likely to have been the dominant cause of the observed warming since the mid-20th century". <sup>[2]</sup></p>
+        <p>The next 2 pages are interactive graphs of greenhouse gas emissions and average temperature anomaly over time around the world. </p>
+        <p>You can see the global trend or filter a specific country or region. </p>
+      </div>
+    </div>
+
+    <div class="zinePage">
+      <iframe src="https://ourworldindata.org/grapher/greenhouse-gas-emissions-by-gas?time=1960..2014" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="zinePage">
+      <iframe src="https://ourworldindata.org/grapher/temperature-anomaly" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="zinePage">
+      <div class="content">
+        <h2 class="textCenter">What happens next?</h1>
+        <p>What does the future of our carbon dioxide and greenhouse gas emissions look like. In the visualization we show a range of potential future scenarios of global greenhouse gas emissions (measured in gigatonnes of carbon dioxide equivalents), based on data from <a href="https://climateactiontracker.org" target="_blank">Climate Action Tracker</a>. <sup>[3]</sup></p>
+        <p>The graph on the next page shows the scenarios where different potential climate policies are implemented in the future. </p>
+      </div>
+    </div>
+
+    <div class="zinePage">
+      <iframe src="https://ourworldindata.org/grapher/future-greenhouse-gas-emission-scenarios?time=1990..2100" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+    </div>
+
+    <div class="zinePage">
+      <div class="content">
+        <h2 class="textCenter">The future awaits...</h1>
+        <p>The most important decisions should be made by the policy makers in the next few years to enforce and ensure real changes that will save the environment. </p>
+        <p>However, as the residents of the Earth, we should always be responsible to the environment, so that our future generations will have the same or even better world to live in. </p>
+      </div>
+    </div>
+
+    <div class="zinePage">
+      <div class="content">
+        <h3 class="textCenter">Citation</h3>
+        <h5>[1] <i>IPCC Fourth Assessment Report: Climate Change 2007. </i>Intergovernmental Panel on Climate Change, 2007, <a href="https://www.ipcc.ch/report/ar4/wg1/" target="_blank">https://www.ipcc.ch/report/ar4/wg1/</a>.</h5>
+        <h5>[2] <i>Climate Change 2014 Synthesis Report: Summary for Policymakers. </i>Intergovernmental Panel on Climate Change, 2015, <a href="https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf" target="_blank">https://www.ipcc.ch/site/assets/uploads/2018/02/AR5_SYR_FINAL_SPM.pdf</a>.</h5>
+        <h5>[3] Ritchie, Hannah, and Max Roser. “CO<sub>2</sub> and Greenhouse Gas Emissions.” <i>Our World in Data</i>, 11 May 2017, ourworldindata.org/co2-and-other-greenhouse-gas-emissions.</h5>
       </div>
     </div>
   </div>
