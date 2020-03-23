@@ -1,3 +1,8 @@
+root {
+  --bg-color: #20BF55;
+  --accent-color: #041d28;
+}
+
 body {
   font-family: dinosaur, sans-serif;
   font-weight: 400;
